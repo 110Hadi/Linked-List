@@ -2,7 +2,6 @@
 
 list_directory = {
 
-
 }
 
 def create(name, length):
@@ -11,6 +10,7 @@ def create(name, length):
          
 
     '''
+    global list_directory
     list_directory[name] = [[],[],length]
 
     #### Initializing the linked list pointer array:
@@ -19,7 +19,24 @@ def create(name, length):
 
     
     for i in range(length):
-        curr_list[1].append(i + 1)
-    print(curr_list[1])
+        list_directory[name][1].append(i+1)
+        list_directory[name][0].append('')
+        ##curr_list[1].append(i + 1)
+    ##list_directory.update({name : curr_list})
 
-create('j',2)
+
+    
+# create('j',2)
+# print(list_directory)
+
+####append
+####pop
+####update
+####sort
+ ###asc
+ ###desc
+ ###custom
+####Merge
+
+
+
